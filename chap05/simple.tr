@@ -1,0 +1,3 @@
+main ->
+  receive
+      * -> yield type to &result
