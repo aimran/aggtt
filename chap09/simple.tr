@@ -1,0 +1,5 @@
+foreach %country in @param
+  main ->
+    receive
+        type = 'cli', geo_country_code=%country -> yield $clicks
+        * -> repeat
