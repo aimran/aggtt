@@ -1,0 +1,5 @@
+foreach %camp_eid
+  main ->
+    receive
+        type = 'cli', campaign_eid=%camp_eid -> yield $clicks
+        * -> repeat
