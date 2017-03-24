@@ -1,0 +1,4 @@
+main ->
+  receive
+      type = 'cli' -> yield $clicks
+      * -> repeat
