@@ -1,0 +1,5 @@
+foreach %country
+  main ->
+    receive
+        type = 'pxl', geo_country_code=%country -> yield $pxl, quit
+        * -> repeat
